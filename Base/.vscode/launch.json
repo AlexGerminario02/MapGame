@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "5_90a0b9a4"
+        },
+        {
+            "type": "java",
+            "name": "Esegui MainTest",
+            "request": "launch",
+            "mainClass": "MainTest",
+            "args": "127.0.0.1 2025"
+        }
+    ]
+}

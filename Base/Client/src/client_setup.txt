@@ -1,0 +1,37 @@
+@echo off
+setlocal enabledelayedexpansion
+
+REM --- Step 1: Imposta le variabili di percorso ---
+set "PROJECT_DIR=%~dp0"
+set "CLIENT_JAR=%PORJECT_DIR%Client.jar"
+set "DEPENDENCES_DIR=%PROJECT_DIR%Server\dependences"
+set "MYSQL_JAR=%DEPENDENCES_DIR%\mysql-connector-java-8.0.17.jar"
+
+echo CLIENT_DIR
+echo PROJECT_DIR
+
+REM --- Step 2: Compilazione del Client ---
+echo Compilazione del Client...
+cd %PROJECT_DIR%
+
+REM Compila il Client
+javac MainTest.java
+if %ERRORLEVEL% neq 0 (
+    echo Errore nella compilazione del Client. Interruzione del processo.
+    pause
+    exit /b 1
+)
+
+REM --- Step 3: Avvio del Client ---
+echo 
+cls
+color 0A
+echo ==============================
+echo =  CLIENT AVVIATO CON SUCCESSO  =
+echo ==============================
+color 07
+REM Avvia il Client con il classpath corretto
+java -cp "%MYSQL_JAR%;%CLIENT_JAR%" MainTest localhost 2025
+
+REM Mantieni la finestra del terminale aperta
+pause
