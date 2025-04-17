@@ -1,0 +1,62 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Estensione_30c67ddb"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "5_90a0b9a4"
+        },
+        {
+            "type": "java",
+            "name": "HttpServerApp",
+            "request": "launch",
+            "mainClass": "httpserver.HttpServerApp",
+            "projectName": "5_eda5ca1c"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "5_eda5ca1c"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "5"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "5"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "5"
+        },
+        {
+            "type": "java",
+            "name": "Esegui MainTest",
+            "request": "launch",
+            "mainClass": "MainTest",
+            "args": "127.0.0.1 2025",
+            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-22.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}
